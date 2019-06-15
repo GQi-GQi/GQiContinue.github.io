@@ -219,13 +219,13 @@ function allPlay(){
 				$(".list-all .roll-img").css({"margin-left":"-200px"})//先把第一个隐藏起来
     	$("#main .list0 .list-all .roll-img").stop().animate({"margin-left":"0px"});//把隐藏的第一个以动画的形式滑出来
 	});//自动播放函数<!--焦点图特效-->
-	<!--遮布效果开始-->
+	// <!--遮布效果开始-->
 	$("#main .classify ul li").hover(function(){
 		$(this).find(".cover").stop().animate({"bottom":"0px"},300)
 		},function(){
 			$(this).find(".cover").stop().animate({"bottom":"-223px"},300)
 			})
-			<!--遮布效果结束-->
+			// <!--遮布效果结束-->
 	
 })
 setInterval("jnkc.innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt(new Date().getDay());",1000);
